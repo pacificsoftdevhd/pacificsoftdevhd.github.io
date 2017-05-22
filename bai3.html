@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo Table</title>
+	<link rel="stylesheet" href="bai3.css">
+	<link rel="stylesheet" href="reset.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	
+	<div class="box">
+		<div class="containner">
+			<div class="headerTables">
+				<div class="dataTables_length">
+				<label for="">Show 
+					<select name="chonSoDong" id="chonSoDong">
+						<option value="10">10</option>
+						<option value="25">25</option>
+						<option value="50">50</option>
+						<option value="100">100</option>
+					</select>
+				 entries</label>
+				</div>
+				<div class="dataTables_filter">
+					<label>Search: <input type="search" id="iSearch" class="inputFilter" placeholder=""></label>
+				</div>
+			</div>
+		</div>
+		
+		<div class="containner">
+			<div class="box-table">
+		  		<table id="myTable" class="">
+				    <thead>
+					    <tr>
+					      <th class="sorting_asc" id="rEngine">Rendering engine</th>
+					      <th class="sorting" id="browser">Browser</th>
+					      <th class="sorting" id="platform">Platform(s)</th>
+					      <th class="sorting" id="eVersion">Engine version</th>
+					      <th class="sorting" id="cGrade">CSS grade</th>
+					    </tr>
+				    </thead>
+				    <tbody>
+					    <tr>
+					      <td>Trident</td>
+					      <td>Internet
+					        Explorer 4.0
+					      </td>
+					      <td>Win 95+</td>
+					      <td> 4</td>
+					      <td>X</td>
+					    </tr>
+					    <tr>
+					      <td>Trident</td>
+					      <td>Internet
+					        Explorer 5.0
+					      </td>
+					      <td>Win 95+</td>
+					      <td>5</td>
+					      <td>C</td>
+					    </tr>
+					    <tr>
+					      <td>Trident</td>
+					      <td>Internet
+					        Explorer 5.5
+					      </td>
+					      <td>Win 95+</td>
+					      <td>5.5</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Trident</td>
+					      <td>Internet
+					        Explorer 6
+					      </td>
+					      <td>Win 98+</td>
+					      <td>6</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Trident</td>
+					      <td>Internet Explorer 7</td>
+					      <td>Win XP SP2+</td>
+					      <td>7</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Trident</td>
+					      <td>AOL browser (AOL desktop)</td>
+					      <td>Win XP</td>
+					      <td>6</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Firefox 1.0</td>
+					      <td>Win 98+ / OSX.2+</td>
+					      <td>1.7</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Firefox 1.5</td>
+					      <td>Win 98+ / OSX.2+</td>
+					      <td>1.8</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Firefox 2.0</td>
+					      <td>Win 98+ / OSX.2+</td>
+					      <td>1.8</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Firefox 3.0</td>
+					      <td>Win 2k+ / OSX.3+</td>
+					      <td>1.9</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Camino 1.0</td>
+					      <td>OSX.2+</td>
+					      <td>1.8</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Camino 1.5</td>
+					      <td>OSX.3+</td>
+					      <td>1.8</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Netscape 7.2</td>
+					      <td>Win 95+ / Mac OS 8.6-9.2</td>
+					      <td>1.7</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Netscape Browser 8</td>
+					      <td>Win 98SE+</td>
+					      <td>1.7</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Netscape Navigator 9</td>
+					      <td>Win 98+ / OSX.2+</td>
+					      <td>1.8</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Mozilla 1.0</td>
+					      <td>Win 95+ / OSX.1+</td>
+					      <td>1</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Mozilla 1.1</td>
+					      <td>Win 95+ / OSX.1+</td>
+					      <td>1.1</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Mozilla 1.2</td>
+					      <td>Win 95+ / OSX.1+</td>
+					      <td>1.2</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Mozilla 1.3</td>
+					      <td>Win 95+ / OSX.1+</td>
+					      <td>1.3</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Mozilla 1.4</td>
+					      <td>Win 95+ / OSX.1+</td>
+					      <td>1.4</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Mozilla 1.5</td>
+					      <td>Win 95+ / OSX.1+</td>
+					      <td>1.5</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Mozilla 1.6</td>
+					      <td>Win 95+ / OSX.1+</td>
+					      <td>1.6</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Mozilla 1.7</td>
+					      <td>Win 98+ / OSX.1+</td>
+					      <td>1.7</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Mozilla 1.8</td>
+					      <td>Win 98+ / OSX.1+</td>
+					      <td>1.8</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Seamonkey 1.1</td>
+					      <td>Win 98+ / OSX.2+</td>
+					      <td>1.8</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Gecko</td>
+					      <td>Epiphany 2.20</td>
+					      <td>Gnome</td>
+					      <td>1.8</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Webkit</td>
+					      <td>Safari 1.2</td>
+					      <td>OSX.3</td>
+					      <td>125.5</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Webkit</td>
+					      <td>Safari 1.3</td>
+					      <td>OSX.3</td>
+					      <td>312.8</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Webkit</td>
+					      <td>Safari 2.0</td>
+					      <td>OSX.4+</td>
+					      <td>419.3</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Webkit</td>
+					      <td>Safari 3.0</td>
+					      <td>OSX.4+</td>
+					      <td>522.1</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Webkit</td>
+					      <td>OmniWeb 5.5</td>
+					      <td>OSX.4+</td>
+					      <td>420</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Webkit</td>
+					      <td>iPod Touch / iPhone</td>
+					      <td>iPod</td>
+					      <td>420.1</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Webkit</td>
+					      <td>S60</td>
+					      <td>S60</td>
+					      <td>413</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Presto</td>
+					      <td>Opera 7.0</td>
+					      <td>Win 95+ / OSX.1+</td>
+					      <td>-</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Presto</td>
+					      <td>Opera 7.5</td>
+					      <td>Win 95+ / OSX.2+</td>
+					      <td>-</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Presto</td>
+					      <td>Opera 8.0</td>
+					      <td>Win 95+ / OSX.2+</td>
+					      <td>-</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Presto</td>
+					      <td>Opera 8.5</td>
+					      <td>Win 95+ / OSX.2+</td>
+					      <td>-</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Presto</td>
+					      <td>Opera 9.0</td>
+					      <td>Win 95+ / OSX.3+</td>
+					      <td>-</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Presto</td>
+					      <td>Opera 9.2</td>
+					      <td>Win 88+ / OSX.3+</td>
+					      <td>-</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Presto</td>
+					      <td>Opera 9.5</td>
+					      <td>Win 88+ / OSX.3+</td>
+					      <td>-</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Presto</td>
+					      <td>Opera for Wii</td>
+					      <td>Wii</td>
+					      <td>-</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Presto</td>
+					      <td>Nokia N800</td>
+					      <td>N800</td>
+					      <td>-</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Presto</td>
+					      <td>Nintendo DS browser</td>
+					      <td>Nintendo DS</td>
+					      <td>8.5</td>
+					      <td>C/A<sup>1</sup></td>
+					    </tr>
+					    <tr>
+					      <td>KHTML</td>
+					      <td>Konqureror 3.1</td>
+					      <td>KDE 3.1</td>
+					      <td>3.1</td>
+					      <td>C</td>
+					    </tr>
+					    <tr>
+					      <td>KHTML</td>
+					      <td>Konqureror 3.3</td>
+					      <td>KDE 3.3</td>
+					      <td>3.3</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>KHTML</td>
+					      <td>Konqureror 3.5</td>
+					      <td>KDE 3.5</td>
+					      <td>3.5</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Tasman</td>
+					      <td>Internet Explorer 4.5</td>
+					      <td>Mac OS 8-9</td>
+					      <td>-</td>
+					      <td>X</td>
+					    </tr>
+					    <tr>
+					      <td>Tasman</td>
+					      <td>Internet Explorer 5.1</td>
+					      <td>Mac OS 7.6-9</td>
+					      <td>1</td>
+					      <td>C</td>
+					    </tr>
+					    <tr>
+					      <td>Tasman</td>
+					      <td>Internet Explorer 5.2</td>
+					      <td>Mac OS 8-X</td>
+					      <td>1</td>
+					      <td>C</td>
+					    </tr>
+					    <tr>
+					      <td>Misc</td>
+					      <td>NetFront 3.1</td>
+					      <td>Embedded devices</td>
+					      <td>-</td>
+					      <td>C</td>
+					    </tr>
+					    <tr>
+					      <td>Misc</td>
+					      <td>NetFront 3.4</td>
+					      <td>Embedded devices</td>
+					      <td>-</td>
+					      <td>A</td>
+					    </tr>
+					    <tr>
+					      <td>Misc</td>
+					      <td>Dillo 0.8</td>
+					      <td>Embedded devices</td>
+					      <td>-</td>
+					      <td>X</td>
+					    </tr>
+					    <tr>
+					      <td>Misc</td>
+					      <td>Links</td>
+					      <td>Text only</td>
+					      <td>-</td>
+					      <td>X</td>
+					    </tr>
+					    <tr>
+					      <td>Misc</td>
+					      <td>Lynx</td>
+					      <td>Text only</td>
+					      <td>-</td>
+					      <td>X</td>
+					    </tr>
+					    <tr>
+					      <td>Misc</td>
+					      <td>IE Mobile</td>
+					      <td>Windows Mobile 6</td>
+					      <td>-</td>
+					      <td>C</td>
+					    </tr>
+					    <tr>
+					      <td>Misc</td>
+					      <td>PSP browser</td>
+					      <td>PSP</td>
+					      <td>-</td>
+					      <td>C</td>
+					    </tr>
+					    <tr>
+					      <td>Other browsers</td>
+					      <td>All others</td>
+					      <td>-</td>
+					      <td>-</td>
+					      <td>U</td>
+					    </tr>
+				    </tbody>
+				    <tfoot>
+					    <tr>
+					      <th>Rendering engine</th>
+					      <th>Browser</th>
+					      <th>Platform(s)</th>
+					      <th>Engine version</th>
+					      <th>CSS grade</th>
+					    </tr>
+				    </tfoot>
+				</table>
+			</div>
+		</div>
+		
+		<div class="containner">
+			<div id="infoTable">
+			<div class="dataTables_info">
+				<p></p>
+			</div>
+			<div class="pagination">
+			</div>
+			</div>
+		</div>
+			
+	</div>
+    
+
+<script>
+	var total_row = 0;
+	var cSoDong = 10;
+	var row_table_backup = $("#myTable tbody").html(); // Backup_data_row
+
+	// Tinh tong so row, them class chan-le
+	function tinhTongRow() {
+		$("#myTable tbody tr").each(function() { 
+			total_row += 1;
+			if ($(this).index() %2 == 0) {
+				$(this).addClass("odd");
+			} else {
+				$(this).addClass("even");
+			}
+		});
+		console.log("Total row: " + total_row);
+	}
+	tinhTongRow();
+
+	// Hien thi dong tu cStart den cSoDong
+	function hienDong(cStart,cSoDong) {
+		$("#myTable tbody tr").css({"display": "none"});	
+	    for (var i = cStart; i <= cSoDong; i++) {
+	    	$('#myTable tr:nth-child('+i+')').show();
+	    }
+	}
+
+	// Tao phan trang sinh ma html
+	function phanTrang(soTrangPhan) {
+		var textPagination = '<a href="#" class="disabled">&laquo;</a>';
+		textPagination += '<a href="#" class="active">'+1+'</a>';
+		for (i = 2; i <= soTrangPhan; i++) {
+			textPagination += '<a href="#">'+i+'</a>';
+		}
+		textPagination += '<a href="#">&raquo;</a>';
+		$(".pagination").html(textPagination);
+	}
+
+	// Doi mau cho chi so phan trang
+	function thayDoiClass(tagAMoi) {
+		$(".pagination a").each(function() {
+			$(this).removeClass("active");
+			tagAMoi.addClass("active");
+		});
+	}
+
+	// Sap Xep
+	function sortTable(n) {
+	  var rows, switching, x, y, shouldSwitch, dir, currentRow, nextRow, switchcount = 0;
+	  switching = true;
+	  dir = "asc"; 
+	  while (switching) {
+	    switching = false;
+	    rows = $("#myTable tbody tr");
+	    $("#myTable tbody tr").each(function(){
+	      currentRow=$(this);
+	      nextRow=currentRow.next();
+	      if (nextRow.length == 0) {return false;} // Kiem tra cuoi -_-
+	      shouldSwitch = false;
+	      x = currentRow.find("td:eq("+n+")").text();
+	      y = nextRow.find("td:eq("+n+")").text();
+	      if (dir == "asc") {
+	        if (x.toLowerCase() > y.toLowerCase()) {
+	          shouldSwitch= true;
+	          return false;
+	        }
+	      } else if (dir == "desc") {
+	        if (x.toLowerCase() < y.toLowerCase()) {
+	          shouldSwitch= true;
+	          return false;
+	        }
+	      }
+	    })
+	    if (shouldSwitch) {
+	      (currentRow).before(nextRow);
+	      switching = true;
+	      switchcount ++; // Kiem tra xem co hoan doi ko  
+	    } else {
+	      if (switchcount == 0 && dir == "asc") {
+	        dir = "desc";
+	        switching = true;
+		   }
+		}
+	 }
+	 hienDong(0,cSoDong); // Refresh table
+	 // reset all arow
+	 $("thead th").removeClass("sorting_asc").removeClass("sorting_desc").addClass("sorting");
+	 // add arow
+	 if (dir == "asc") {
+	 	$("thead th").eq(n).removeClass("sorting_asc").addClass("sorting_desc");
+	 } else {
+	 	$("thead th").eq(n).removeClass("sorting_desc").addClass("sorting_asc");
+	 }
+	}
+
+	// START -------------------------------------
+	hienDong(0,cSoDong);
+	// Sinh html infoTable
+	var texttotal_rowTable = "<p>Showing 1 to "+cSoDong+" of "+total_row+" entries</p>";
+	$("#infoTable p").html(texttotal_rowTable);
+	// Tinh so phan trang tu total_row
+	var soTrangPhan = Math.floor(total_row/cSoDong)+1;
+	// Sinh html tag<a>
+	phanTrang(soTrangPhan);
+
+	// su kien click so phan trang
+	function goiLaiPhanTrang(){
+		$(".pagination a").click(function(){
+			var sClick = $(this).index();
+			if (sClick == 0){
+				sClick = ($(".pagination a").filter(".active").index() - 1);
+				thayDoiClass($(".pagination a").filter(".active").prev());
+			} else if (sClick == (soTrangPhan+1)) {
+				sClick = ($(".pagination a").filter(".active").index() + 1);
+				thayDoiClass($(".pagination a").filter(".active").next());
+			} else {
+				thayDoiClass($(this));				
+			}
+			hienDong(1+((sClick-1)*cSoDong),sClick*cSoDong);
+			texttotal_rowTable = "<p>Showing "+(1+((sClick-1)*cSoDong))+" to "+(sClick*cSoDong)+" of "+total_row+" entries</p>";
+			if (sClick*cSoDong>total_row){
+				texttotal_rowTable = "<p>Showing "+(1+((sClick-1)*cSoDong))+" to "+total_row+" of "+total_row+" entries</p>";
+			}
+			$("#infoTable p").html(texttotal_rowTable);
+			console.log(sClick);
+
+			// Disable nut qua lai
+			if(sClick==1){
+				$(".pagination a").first().addClass("disabled");
+			} else {
+				$(".pagination a").first().removeClass("disabled");
+			}
+			if(sClick==soTrangPhan){
+				$(".pagination a").last().addClass("disabled");
+			} else {
+				$(".pagination a").last().removeClass("disabled");
+			}
+		});
+	}
+	goiLaiPhanTrang();
+
+	// Bat su kien click vao th
+	$("thead th").click(function(){
+		console.log("index of th: " + $(this).index());
+		sortTable($(this).index()); // Ham sap xep
+	});
+
+	// Bat su kien input tim kiem
+	$("#iSearch").keyup(function(){
+		$("#myTable tbody").html(row_table_backup); // Tra lai html
+		var tSearch = $("#iSearch").val().toUpperCase();
+		$("#myTable tbody TR").removeClass("khonghienthi");
+    	$("#myTable tbody TR").each(function(){
+	    currentRow=$(this);
+	    if (currentRow.text().toUpperCase().indexOf(tSearch)>-1) {
+	    	// NOTHING TODO :v
+	    } else {
+	    	currentRow.remove();
+	    }
+	    console.log(tSearch);
+	    })
+	    hienDong(0,cSoDong);
+	    total_row = 0;
+	    tinhTongRow();
+	    soTrangPhan = Math.floor(total_row/cSoDong)+1; // Tinh so trang
+	    texttotal_rowTable = "<p>Showing 1 to "+cSoDong+" of "+total_row+" entries</p>";
+		$("#infoTable p").html(texttotal_rowTable);
+		phanTrang(soTrangPhan);
+		goiLaiPhanTrang();
+	});
+
+	// Chon so dong hien thi
+	$('#chonSoDong').change(function() {
+		cSoDong = $('#chonSoDong').val();
+		soTrangPhan = Math.floor(total_row/cSoDong)+1;
+		if (cSoDong > total_row){
+			cSoDong = total_row;
+			soTrangPhan = 1;	
+		}
+		hienDong(0,cSoDong);
+		var texttotal_rowTable = "<p>Showing 1 to "+cSoDong+" of "+total_row+" entries</p>";
+		$("#infoTable p").html(texttotal_rowTable);
+		phanTrang(soTrangPhan);
+		goiLaiPhanTrang();
+	});
+
+</script>
+	
+</body>
+</html>

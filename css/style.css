@@ -1,0 +1,168 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a:hover {
+    cursor:  pointer;
+}
+.row:after,.row:before{display:table;content:" "}
+.row:after{clear:both}
+body{
+    background-color: #ecf0f5;
+    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.database {
+    position: relative;
+    background: #ffffff;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.database .box-header {
+    color: #444;
+    display: block;
+    padding: 10px;
+    position: relative;
+}
+.box-header .box-title {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
+}
+.box-body {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+}
+.row-left ,.row-right ,.dataTables  {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    width: 100%;
+}
+.row-left {
+    text-align: left;
+    width: 50%;
+}
+.row-right {
+    text-align: right;
+    width: 50%;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: normal;
+    text-align: left;
+    white-space: nowrap;
+}
+.form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #d2d6de;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.select-left ,.input-right{
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.table-bordered {
+    border-collapse: separate !important;
+    clear: both;
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
+    max-width: none !important;
+    border: 1px solid #f4f4f4;
+    width: 100%;
+    border-spacing: 0;
+    font-size: 10pt;
+}
+.table>thead>tr>th {
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px !important;
+}
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>th{
+    border: 1px solid #eceaea;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+}
+th{text-align: left}
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc {
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+table.dataTable thead .sorting.asc {
+    background-image: url('../images/sort_desc.png')
+}
+table.dataTable thead .sorting.desc {
+    background-image: url('../images/sort_asc.png')
+}
+table.dataTable thead .sorting {
+    background-image: url('../images/sort_both.png')
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+div.dataTables_info {
+    padding-top: 8px;
+    white-space: nowrap;
+}
+div.dataTables_paginate {
+    margin: 0;
+    white-space: nowrap;
+    text-align: right;
+}
+div.dataTables_paginate ul.pagination {
+    margin: 2px 0;
+    white-space: nowrap;
+    display: inline-block;
+    padding-left: 0;
+    border-radius: 4px;
+}
+.pagination>li {
+    display: inline;
+}
+.pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    z-index: 2;
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd;
+}
+.pagination>li>a {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #666;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
